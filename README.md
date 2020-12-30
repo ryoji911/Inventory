@@ -8,6 +8,7 @@
 また、カレンダー機能を使って、毎月の棚卸しを実施する日や、請求書の締めの日などを、管理することができます。  
 
 # URL
+https://inventory-32480.herokuapp.com/
 
 # テスト用アカウント
 ・email: test@test  
