@@ -1,0 +1,123 @@
+.title-contents {
+  width: 100vw;
+  background-image: url('main1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.service-title {
+  font-size: 12vh;
+}
+
+.service-explain {
+  font-size: 2.5vh;
+  line-height: 40px;
+}
+
+li{
+  list-style: none;
+}
+
+
+
+.enter_title{
+  position: relative;
+  font-size: 6vh;
+  color: #333;
+  text-align: center;
+}
+
+.enter_title::before,
+.enter_title::after {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 10%;
+  content: '';
+  border-top: 3px solid #333;
+}
+
+.enter_title::before {
+  left: 0;
+}
+
+.enter_title::after {
+  right: 0;
+}
+
+
+.cost_main{
+  width: 80vw;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 10vh 10vw;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vh 3vw;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 15em;
+  padding: 1.2em 0.8em;
+  margin: 0 auto;
+  color: #333;
+  border: 0.5px solid #e9eaea;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.content-1{
+  margin: 0;
+}
+
+.content-2 {
+  margin: 0.8em 0;
+  font-size: 0.8em;
+  color: #00b5ad;
+  cursor: pointer;
+}
+
+.content-3:hover {
+  border-bottom: #00b5ad 1px solid;
+}
+
+
+.calender{
+  width: 80vw;
+  margin: 10vw;
+}
+
+.calender_head{
+  font-size: 3vh;
+}
+
+.calender_btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #00b5ad;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #00b5ad solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+
+.calender_btn:hover {
+  color: #fff;
+  background: #00b5ad;
+}

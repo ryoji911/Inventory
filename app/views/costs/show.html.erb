@@ -1,0 +1,31 @@
+<%= render "shared/header" %>
+
+<div class="costs_show_main">
+  <h1><%= @cost.date.year %>年<%= @cost.date.month %>月</h1>
+
+
+  <div class="chart">
+    <div class="chart-detail">
+      <%= pie_chart @data, width: "45vw", height: "40vh" %>
+    </div>
+    <div class="chart-detail">
+      <%= image_tag "main.png" %>
+    </div>
+  </div>
+
+  <div class="costs-explain">
+    <h2>食材原価率は　<%= @genkaritu %>％　です</h2>
+  </div>
+
+  <div class="costs-explain">
+    <h2>粗利は　<%= @arari %>千円　です</h12>
+  </div>
+
+  <div class="costs-explain">
+    <h2>営業利益は　<%= @eigyourieki %>千円　です</h2>
+  </div>
+
+<%= link_to "戻る", root_path, class: "back_btn" %>
+
+
+</div>

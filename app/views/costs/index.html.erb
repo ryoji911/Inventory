@@ -1,0 +1,56 @@
+<%= render "shared/header" %>
+
+<div class='title-contents'>
+    <h2 class='service-title'>
+      棚卸しアプリ
+    </h2>
+    <p class='service-explain'>
+      毎月の棚卸しを簡単に行える
+    </p>
+    <p class='service-explain'>
+      月末の締めの予定を立てられる
+    </p>
+    <p class='service-explain'>
+      原価率、利益が簡単に出力される
+    </p>
+</div>
+
+<div class="main_contents">
+<div class="enter_title">
+  <p>棚卸し詳細一覧</p>
+</div>
+
+<div class="cost_main">
+<% @costs.each do |cost| %>
+<li class='list'>
+  <%= link_to cost_path(cost.id) do %>
+  <div class="card">
+  <h3 class="content-1"><%= cost.date.year %>年<%= cost.date.month %>月</h3>
+  <a class="content-">詳細はこちら</a>
+  </div>
+  <% end %>
+</li>
+<% end %>
+</div>
+
+
+<div class="enter_title">
+  <p>棚卸しカレンダー</p>
+</div>
+
+<div class="calender">
+  <div class="calender_head">
+    <%= link_to '予定を登録', new_event_path, class: "calender_btn" %>
+  </div>
+  <%= month_calendar events: @events do |date, events| %>
+    <%= date.day %>
+
+  <% events.each do |event| %>
+    <div>
+      <%= event.title %>
+      <%= event.content %>
+    </div>
+    <% end %>
+  <% end %>
+</div>
+</div>

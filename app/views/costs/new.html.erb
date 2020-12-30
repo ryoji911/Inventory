@@ -1,0 +1,56 @@
+<%= render "shared/header" %>
+
+<div class="costs_new_main">
+  <div class="container">
+    <h3>登録する</h3>
+    <div class="create_costs">
+    <%= form_with(model: @cost, local: true) do |form| %>
+      <div class='costs_item'>
+      <%= raw sprintf(
+                  form.date_select(
+                    :date,
+                    class:'select-year-month',
+                    use_month_numbers: true,
+                    discard_day: true,
+                    prompt:'--',
+                    start_year: 2011,
+                    end_year: (Time.now.year),
+                    date_separator: '%s'),
+                  "<p> 年 </p>") + "<p> 月 </p>" %>
+      </div>
+      <div class="costs_item">
+        ■ 売り上げ金額を入力してください　　　<%= form.text_field :sale, placeholder: "￥" %>
+      </div>
+      <div class="costs_item">
+        ■ 食材が原価を入力してください　　　　<%= form.text_field :food_cost, placeholder: "￥" %>
+      </div>
+      <div class="costs_item">
+        ■ 光熱費を入力してください　　　　　　<%= form.text_field :utility_cost, placeholder: "￥" %>
+      </div>
+      <div class="costs_item">
+        ■ 人件費を入力してください　　　　　　<%= form.text_field :labor_cost, placeholder: "￥" %>
+      </div>
+      <div class="costs_item">
+        ■ 家賃を入力してください　　　　　　　<%= form.text_field :rent, placeholder: "￥" %>
+      </div>
+      <div class="costs_item">
+        ■ 消耗品費を入力してください　　　　　<%= form.text_field :supply, placeholder: "￥" %>
+      </div>
+      <div class="costs_item">
+        ■ その他の金額を入力してください　　　<%= form.text_field :other, placeholder: "￥" %>
+      </div>
+      <div class="costs_item">
+        ■ 当月の棚卸し金額を入力してください　<%= form.text_field :inventory, placeholder: "￥" %>
+      </div>
+      <div class="costs_item">
+        ■ 前月の棚卸し金額を入力してください　<%= form.text_field :last_inventory, placeholder: "￥" %>
+      </div>
+
+      <%= form.submit "登録",class: "login_btn" %>
+    <% end %>
+    </div>
+  </div>
+
+<%= link_to "戻る", root_path, class: "back_btn" %>
+
+</div>

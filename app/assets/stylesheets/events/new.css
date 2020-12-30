@@ -1,0 +1,16 @@
+.events_new_main{
+  display: block;
+  text-align: center;
+  margin: 10vw;
+
+}
+
+.input-birth-wrap{
+  text-align: center;
+}
+
+.events_item{
+  flex-direction: column;
+  margin: 2vh auto;
+}
+
