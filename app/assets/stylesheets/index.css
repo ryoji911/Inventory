@@ -30,6 +30,7 @@ li{
 
 .enter_title{
   position: relative;
+  margin-top: 4vh;
   font-size: 6vh;
   color: #333;
   text-align: center;
@@ -40,7 +41,7 @@ li{
   position: absolute;
   top: 50%;
   display: inline-block;
-  width: 10%;
+  width: 25%;
   content: '';
   border-top: 3px solid #333;
 }

@@ -11,6 +11,9 @@
       <li class="nav-item">
         <%= link_to '月次金額登録', new_cost_path, class: "nav-link" %>
       </li>
+      <li class="nav-item">
+        <%= link_to '予定登録', new_event_path, class: "nav-link" %>
+      </li>
       <% if user_signed_in? %>
         <li class="nav-item">
           <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "nav-link" %>
