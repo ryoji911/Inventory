@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :costs
+  has_many :events
 
   validates :name, presence: true
 end
