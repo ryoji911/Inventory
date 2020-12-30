@@ -48,9 +48,11 @@
 
 ## グラフ表示機能
 入力した経費の割合がグラフで表示されます。  
+[![Image from Gyazo](https://i.gyazo.com/93cc35e197f93b0648bcde83932fc6d8.png)](https://gyazo.com/93cc35e197f93b0648bcde83932fc6d8)
 
 ## カレンダー機能
 カレンダーに、棚卸しを行う日や、毎月の締め日を登録することができます。
+[![Image from Gyazo](https://i.gyazo.com/0bba99af98eb980da26142ce478b8ffb.png)](https://gyazo.com/0bba99af98eb980da26142ce478b8ffb)
 
 # ER図
 [![Image from Gyazo](https://i.gyazo.com/17968606ebc6c81c212f03d68f83ac89.png)](https://gyazo.com/17968606ebc6c81c212f03d68f83ac89)
