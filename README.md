@@ -1,5 +1,6 @@
 # アプリケーション名
 # 「Inventory」 （棚卸し）
+[![Image from Gyazo](https://i.gyazo.com/3fc970e33a8c7c640ada70bbb560e0d1.jpg)](https://gyazo.com/3fc970e33a8c7c640ada70bbb560e0d1)
 
 # 概要
 このアプリは飲食店などの棚卸し業務を効率化するアプリです。  
@@ -23,17 +24,17 @@
 ・毎月の締め日を把握できるようにする。  
 
 # 使用技術
-・フレームワーク：Rails6.0.3
-・CSS フレームワーク：Bootstrap
-・サーバーサイド言語：Ruby2.6.6
-・データベース：MySQL
-・ヴァージョン管理：GitHub
-・デプロイ環境：heroku
-・ユーザー管理：devise
-・カレンダー機能：simple_calender
-・グラフ表示：chartkick
-・使用マシン：Mac Catalina(10.15.5)
-・開発期間（約 1 週間）
+・フレームワーク：Rails6.0.3  
+・CSS フレームワーク：Bootstrap  
+・サーバーサイド言語：Ruby2.6.6  
+・データベース：MySQL  
+・ヴァージョン管理：GitHub  
+・デプロイ環境：heroku  
+・ユーザー管理：devise  
+・カレンダー機能：simple_calender  
+・グラフ表示：chartkick  
+・使用マシン：Mac Catalina(10.15.5)  
+・開発期間（約 1 週間）  
 
 # 機能
 ## ユーザーログイン機能
