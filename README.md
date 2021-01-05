@@ -49,7 +49,7 @@ https://inventory-32480.herokuapp.com/
 
 ## グラフ表示機能
 入力した経費の割合がグラフで表示されます。  
-[![Image from Gyazo](https://i.gyazo.com/93cc35e197f93b0648bcde83932fc6d8.png)](https://gyazo.com/93cc35e197f93b0648bcde83932fc6d8)
+[![Image from Gyazo](https://i.gyazo.com/68c75f2a2c4ac39ef4d6229b8a0ba8de.gif)](https://gyazo.com/68c75f2a2c4ac39ef4d6229b8a0ba8de)
 
 ## カレンダー機能
 カレンダーに、棚卸しを行う日や、毎月の締め日を登録することができます。
