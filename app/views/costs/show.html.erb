@@ -6,7 +6,7 @@
 
   <div class="chart">
     <div class="chart-detail">
-      <%= pie_chart @data, width: "45vw", height: "40vh" %>
+      <%= pie_chart @data, width: "45vw", height: "40vh", title: "支出の割合" %>
     </div>
     <div class="chart-detail">
       <%= image_tag "main.png" %>
@@ -14,16 +14,57 @@
   </div>
 
   <div class="costs-explain">
-    <h2>食材原価率は　<%= @genkaritu %>％　です</h2>
+    <h2><span>Cost rate</span>食材原価率は　<%= @genkaritu %>％　です</h2>
   </div>
 
   <div class="costs-explain">
-    <h2>粗利は　<%= @arari %>千円　です</h12>
+    <h2><span>Gross profit</span>粗利は　<%= @arari %>千円　です</h2>
   </div>
 
   <div class="costs-explain">
-    <h2>営業利益は　<%= @eigyourieki %>千円　です</h2>
+    <h2><span>Operating income</span>営業利益は　<%= @eigyourieki %>千円　です</h2>
   </div>
+
+
+
+  <table class="show_table">
+  <tr class="show_tr">
+    <th class="show_th">売り上げ</th>
+    <td class="show_td">¥　<%= @cost.sale %></td>
+  </tr>
+  <tr class="show_tr">
+    <th class="show_th">食材原価</th>
+    <td class="show_td">¥　<%= @cost.food_cost %></td>
+  </tr>
+  <tr class="show_tr">
+    <th class="show_th">光熱費</th>
+    <td class="show_td">¥　<%= @cost.utility_cost %></td>
+  </tr>
+  <tr class="show_tr">
+    <th class="show_th">人件費</th>
+    <td class="show_td">¥　<%= @cost.labor_cost %></td>
+  </tr>
+  <tr class="show_tr">
+    <th class="show_th">家賃</th>
+    <td class="show_td">¥　<%= @cost.rent %></td>
+  </tr>
+  <tr class="show_tr">
+    <th class="show_th">消耗品費</th>
+    <td class="show_td">¥　<%= @cost.supply %></td>
+  </tr>
+  <tr class="show_tr">
+    <th class="show_th">その他金額</th>
+    <td class="show_td">¥　<%= @cost.other %></td>
+  </tr>
+  <tr class="show_tr">
+    <th class="show_th"><%= @cost.date.month %>月棚卸し金額</th>
+    <td class="show_td">¥　<%= @cost.inventory %></td>
+  </tr>
+  <tr class="show_tr">
+    <th class="show_th"><%= @cost.date.month - 1 %>月棚卸し金額</th>
+    <td class="show_td">¥　<%= @cost.last_inventory %></td>
+  </tr>
+</table>
 
 <%= link_to "戻る", root_path, class: "back_btn" %>
 

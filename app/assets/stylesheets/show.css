@@ -11,5 +11,71 @@
 }
 
 .costs-explain {
-  margin: 3vh 0;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 2rem 1rem 130px;
+  margin: auto 10%;
+  word-break: break-all;
+  border-top: 3px solid #000;
+  border-radius: 12px 0 0 0;
+}
+
+h2 span {
+  font-size: 20px;
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding: 3px 20px;
+  color: #fff;
+  border-radius: 10px 0 20px 10px;
+  background: #000;
+}
+
+.show_table{
+  width: 80%;
+  border-collapse: collapse;
+  justify-content: center;
+  margin: 3vh 10%;
+}
+
+.show_tr{
+  border-bottom: solid 2px white;
+}
+
+.show_tr:last-child{
+  border-bottom: none;
+}
+
+.show_th{
+  position: relative;
+  text-align: left;
+  width: 30%;
+  background-color: #52c2d0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.show_th:after{
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #52c2d0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.show_td{
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 0;
 }
