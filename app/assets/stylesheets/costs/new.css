@@ -18,6 +18,8 @@
 }
 
 .back_btn {
+  display: block;
+  width: 5.5em;
   margin: 2vh 0;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
